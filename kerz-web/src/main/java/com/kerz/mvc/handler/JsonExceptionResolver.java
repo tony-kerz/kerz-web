@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver;
-import org.springframework.web.servlet.view.json.MappingJacksonJsonView;
+import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 public class JsonExceptionResolver extends AbstractHandlerExceptionResolver implements InitializingBean
 {
 	protected static final Logger log = LoggerFactory.getLogger(JsonExceptionResolver.class);
 
 	@Autowired
-	MappingJacksonJsonView jsonView;
+	MappingJackson2JsonView jsonView;
 
 	/**
 	 * Sets the {@linkplain #setOrder(int) order} to {@link #LOWEST_PRECEDENCE}.

@@ -8,11 +8,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.CollectionUtils;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.servlet.view.json.MappingJacksonJsonView;
+import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
-public class BindingResultMappingJsonJacksonView extends MappingJacksonJsonView
+public class BindingResultMappingJackson2JsonView extends MappingJackson2JsonView
 {
-	private Logger log = LoggerFactory.getLogger(BindingResultMappingJsonJacksonView.class);
+	private Logger log = LoggerFactory.getLogger(BindingResultMappingJackson2JsonView.class);
 
 	private boolean extractValueFromSingleKeyModel = false;
 
